@@ -6,12 +6,12 @@ const app = express()
 
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: false }))
-
+// this is how we render the views 
 app.get('/',  (req, res) => {
  
   res.render('index')
 })
-
+// the shortURL file is not imported yet
 
 
 
