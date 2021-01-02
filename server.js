@@ -11,8 +11,12 @@ app.get('/',  (req, res) => {
  
   res.render('index')
 })
-// the shortURL file is not imported yet
+// the shortURL file is imported here 
+app.post('/makeurl', (req, res) => {
+  console.log('uyou')
 
+  // res.redirect('/')
+})
 
 
 app.listen(process.env.PORT || 5000);
