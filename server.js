@@ -15,7 +15,7 @@ app.get('/',  (req, res) => {
 app.post('/makeurl', (req, res) => {
   console.log('uyou')
 
-  // res.redirect('/')
+   res.redirect('/')
 })
 
 
