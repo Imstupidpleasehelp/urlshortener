@@ -4,7 +4,6 @@ const app = express()
 
 
 app.use(express.static(__dirname + '/public'));
-app.use(express.urlencoded({ extended: false }))
 // this is how we render the views 
 app.get('/',  (req, res) => {
  
@@ -12,7 +11,7 @@ app.get('/',  (req, res) => {
 })
 // the shortURL file is imported here 
 app.post('/makeurl', (req, res) => {
-  console.log('uyou')
+  console.log('uaaaa')
 
    res.redirect('/')
 })
