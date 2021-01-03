@@ -4,20 +4,25 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div class="container">
+    <h1>URL Shrinker</h1>
+    <form action="/shortUrls" method="POST" class="my-4 form-inline">
+      <label for="fullUrl" class="sr-only">Url</label>
+      <input required placeholder="Url" type="url" name="fullUrl" id="fullUrl" class="form-control col mr-2" />
+      <button class="btn btn-success" type="submit">Shrink</button>
+    </form>
+    
+    <table class="table table-striped table-responsive">
+      <thead>
+        <tr>
+          <th>Full URL</th>
+          <th>Short URL</th>
+          <th>Clicks</th>
+        </tr>
+      </thead>
+      
+    </table>
+  </div>
     </div>
   );
 }

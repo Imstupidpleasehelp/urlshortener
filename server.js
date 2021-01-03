@@ -7,9 +7,9 @@ app.use(express.static(__dirname + '/public'));
 // this is how we render the views 
 app.get('/',  (req, res) => {
  
-  res.render('app')
+  res.render('index')
 })
-// the shortURL file is imported here 
+// the URL file is imported here 
 app.post('/makeurl', (req, res) => {
   console.log('uaaaa')
 
