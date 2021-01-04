@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
@@ -6,10 +6,10 @@ function App() {
     <div className="App">
       <div class="container">
     <h1>URL Shrinker</h1>
-    <form action="/shortUrls" method="POST" class="my-4 form-inline">
+    <form action="/makeurl" method="POST" class="my-4 form-inline">
       <label for="fullUrl" class="sr-only">Url</label>
       <input required placeholder="Url" type="url" name="fullUrl" id="fullUrl" class="form-control col mr-2" />
-      <button class="btn btn-success" type="submit">Shrink</button>
+      <button class="btn btn-success" type="submit">Do it</button>
     </form>
     
     <table class="table table-striped table-responsive">
